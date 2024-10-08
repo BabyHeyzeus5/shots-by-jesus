@@ -83,6 +83,7 @@ footer {
     height: 5vh;
     padding-left: 5%;
     padding-top: 2vh;
+    background-color: black;
 }
 
 #navlinks a:hover {
