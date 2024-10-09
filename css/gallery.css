@@ -39,16 +39,12 @@ nav.scrolled {
     padding: 3vh 0;
 }
 
-.gallery-item {
+.preview-size {
     background-color: transparent;
     padding: 1vh;
+    height: 50vh;
 }
 
-.gallery-item img {
-    height: 60vh;
-    background-color: transparent;
-    object-fit: contain;
-}
 
 .overlay {
     display: none;
@@ -89,9 +85,9 @@ footer {
     .gallery-header p {
         font-size: 1.2rem; /* Smaller subtitle */
     }
-    .gallery-item {
-        max-height: 40vh;
-        max-width: 40vw;
+    .preview-size {
+        max-width: 45vw;
+        height: auto;
     }
 
     .gallery-grid {
@@ -120,7 +116,7 @@ footer {
 
     .gallery-item {
         max-width: 45vw;
-        max-height: 30vh;
+        height: auto;
     }
 
     nav.scrolled {
@@ -128,9 +124,9 @@ footer {
     }
 
     .enlargedImage {
-        max-width: 80%; /* Reduce max width for images in overlay */
-        max-height: 80%;
-    }
+       max-width: 100%; /* Reduce max width for images in overlay */
+        height: auto;
+    }  
 
     footer {
         font-size: 0.7rem; /* Even smaller footer text */

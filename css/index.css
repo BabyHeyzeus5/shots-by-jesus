@@ -48,6 +48,7 @@
 
 footer {
     color: white;
+    background-color: black;
 }
 
 .gallery {
@@ -63,10 +64,12 @@ footer {
 .gallery-item {
     background-color: transparent;
     margin: 1vh;
+    max-width: 48vw;
 }
 
 .gallery-item img {
-    max-height: 55vh;
+    width: 100%;
+    height: auto;
 }
 
 /* RESPONSIVE DESIGN FOR SMALL SCREENS */
