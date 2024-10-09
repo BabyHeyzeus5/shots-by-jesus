@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shots By Jesus</title>
@@ -142,7 +142,78 @@
     <img id="enlargedImage" class="enlargedImage" src="" alt="Image Enlarged">
 </div>
 
-<script src="/js/gallery.js/"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const overlay = document.getElementById('overlay');
+    const enlargedImage = document.getElementById('enlargedImage');
+    const images = document.querySelectorAll('.preview-size'); 
+    let currentIndex = 0; 
+
+    
+    function updateImage(index) {
+        if (index >= 0 && index < images.length) {
+            enlargedImage.src = images[index].src;
+            currentIndex = index; 
+        }
+    }
+
+    
+    images.forEach((image, index) => {
+        image.addEventListener('click', function() {
+            updateImage(index); 
+            overlay.style.display = 'flex'; 
+        });
+    });
+
+    
+    overlay.addEventListener('click', function() {
+        overlay.style.display = 'none';
+    });
+
+    
+    document.addEventListener('keydown', function(event) {
+        if (overlay.style.display === 'flex') {
+            if (event.key === 'ArrowRight') {
+                
+                if (currentIndex < images.length - 1) {
+                    updateImage(currentIndex + 1);
+                }
+            } else if (event.key === 'ArrowLeft') {
+                
+                if (currentIndex > 0) {
+                    updateImage(currentIndex - 1);
+                }
+            }
+        }
+    });
+
+    
+    let startX = 0;
+    let endX = 0;
+
+    enlargedImage.addEventListener('touchstart', function(event) {
+        startX = event.touches[0].clientX; 
+    });
+
+    enlargedImage.addEventListener('touchmove', function(event) {
+        endX = event.touches[0].clientX; 
+    });
+
+    enlargedImage.addEventListener('touchend', function() {
+        if (startX > endX + 50) {
+            
+            if (currentIndex < images.length - 1) {
+                updateImage(currentIndex + 1);
+            }
+        } else if (startX < endX - 50) {
+            
+            if (currentIndex > 0) {
+                updateImage(currentIndex - 1);
+            }
+        }
+    });
+});
+</script>
 
     <footer>
         <p>&copy; 2024 Andrew Jesus.  All rights reserved.</p>
