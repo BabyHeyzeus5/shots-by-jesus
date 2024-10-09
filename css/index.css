@@ -61,14 +61,14 @@ footer {
     align-items: center;
 }
 
-.gallery-item {
+.gallery a {
     background-color: transparent;
     margin: 1vh;
     max-width: 48vw;
 }
 
-.gallery-item img {
-    width: 100%;
+.gallery img {
+    max-width: 48vw;
     height: auto;
 }
 
@@ -92,11 +92,11 @@ footer {
         flex-direction: column;
     }
 
-    .gallery-item {
-        margin: 2vh 0; /* Increased vertical margin for smaller screens */
+    .gallery a {
+        margin: 1vh 0; /* Increased vertical margin for smaller screens */
     }
 
-    .gallery-item img {
+    .gallery img {
         max-height: 50vh;
         max-width: 90vw; /* Make images more adaptive to screen size */
     }
@@ -115,8 +115,9 @@ footer {
         font-size: 1rem;
     }
 
-    .gallery-item img {
-        max-height: 30vh;
+    .gallery img {
+        max-height: 40vh;
         max-width: 95vw; /* Full-width for smaller screens */
+        margin: 0;
     }
 }
