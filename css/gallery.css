@@ -80,21 +80,18 @@ footer {
 }
 
 /* Responsive Styles for Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .gallery-header h1 {
         font-size: 2.5rem; /* Smaller header text */
+        padding-top: 2vh
     }
 
     .gallery-header p {
         font-size: 1.2rem; /* Smaller subtitle */
     }
-
-    .gallery-item img {
-        height: 40vh; /* Reduce image size for smaller screens */
-    }
-
     .gallery-item {
-        height: 40vh; /* Reduce image size for smaller screens */ 
+        max-height: 40vh;
+        max-width: 40vw;
     }
 
     .gallery-grid {
@@ -121,14 +118,9 @@ footer {
         font-size: 1rem; /* Further reduce subtitle */
     }
 
-    .gallery-item img {
-        max-width: 26vh;
-        max-height: 30vh; /* Further reduce image size */
-    }
-
     .gallery-item {
-        max-width: 26vh;
-        max-height: 30vh; /* Further reduce image size */  
+        max-width: 45vw;
+        max-height: 30vh;
     }
 
     nav.scrolled {
