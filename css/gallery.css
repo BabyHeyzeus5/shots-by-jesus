@@ -93,6 +93,10 @@ footer {
         height: 40vh; /* Reduce image size for smaller screens */
     }
 
+    .gallery-item {
+        height: 40vh; /* Reduce image size for smaller screens */ 
+    }
+
     .gallery-grid {
         padding: 2vh 0;
     }
@@ -120,6 +124,11 @@ footer {
     .gallery-item img {
         max-width: 26vh;
         max-height: 30vh; /* Further reduce image size */
+    }
+
+    .gallery-item {
+        max-width: 26vh;
+        max-height: 30vh; /* Further reduce image size */  
     }
 
     nav.scrolled {
