@@ -7,7 +7,7 @@
 
 .hero {
     height: 100vh;
-    background-image: url("/images/Hero.JPG");
+    background-image: url("/images/Hero.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -48,7 +48,6 @@
 
 footer {
     color: white;
-    background-color: black;
 }
 
 .gallery {
