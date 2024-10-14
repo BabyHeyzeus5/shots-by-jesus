@@ -119,7 +119,7 @@ footer {
 
     .gallery a {
         margin: 1vh 0; /* Increased vertical margin for smaller screens */
-
+        max-width: 90vw;
     }
 
     .gallery img {
