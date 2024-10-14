@@ -59,12 +59,37 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .gallery a {
     background-color: transparent;
     margin: 1vh;
     max-width: 48vw;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.gallery a h1 {
+    z-index: 20;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+
+.gallery a:hover h1 {
+    opacity: 1;
+}
+
+.gallery a:hover img {
+    filter: blur(2px);
 }
 
 .gallery img {
@@ -94,6 +119,7 @@ footer {
 
     .gallery a {
         margin: 1vh 0; /* Increased vertical margin for smaller screens */
+
     }
 
     .gallery img {
