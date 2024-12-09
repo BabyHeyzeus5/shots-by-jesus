@@ -36,6 +36,7 @@ nav.scrolled {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 3vh 0;
 }
 
