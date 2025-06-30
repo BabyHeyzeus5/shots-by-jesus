@@ -1,264 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta name="generator" content="Hugo 0.135.0">
+	<meta name="generator" content="Hugo 0.135.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shots By Jesus</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/photoswipe.css">
+    
+<link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <style>
         * {
             --primary-color: ;
             --secondary-color: ;
-            --text-color: #fff;
+            --text-color: ;
         }
     </style>
+    <script type="module">
+    import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';
+    import PhotoSwipe from '/js/photoswipe.esm.js';
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#photo-gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe
+    });
+    lightbox.init();
+    </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 </head>
 <body>
-    <a href="javascript:void(0);" class="hamburger" id="hamburger" onclick="navFunction()">
-        &#9776; 
-    </a>
-    <nav id="nav-list">
-        <img class="nav-logo" src="/images/camera_icon.png" alt="camera icon">
-        <ul id="navlinks">
-            <li><a class="navlink" href="/">Home</a></li>
-            <li><a class="navlink" href="/#gala">Galleries</a></li>
-            
-            
-        </ul>
-    </nav>
-    <script>
-    function navFunction() {
-        var screenWidth = window.innerWidth || document.documentElement.clientWidth;
-
-        if (screenWidth < 768) {
-            
-            var x = document.getElementById("navlinks")
-            if (x.style.display === "block") {
-                x.style.display = "none"
-            } else {
-                x.style.display = "block"
-            }
-        }
-    }
-    </script>
     
-    <head>
-        <link rel="stylesheet" href="/css/index.css">
-    </head>
-    <section class="hero">
-        <div class="text">
-            <h1>Shots by Jesus</h1>
-            <p>Capture moments, tell stories</p>
-        </div>
-    </section>
-    
-    <section class="featured-gallery" id="gala">
-        <h1>Galleries</h1s>
-        <div class="gallery">
-            
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/headshots/">
-                        <div class="title-overlay"><h1>Headshots</h1></div>
-                        <img src="/albums/headshots/DSC00019.jpg" alt="Headshots">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/isu-mbb-ucf/">
-                        <div class="title-overlay"><h1>Iowa State Men&#39;s Basketball vs UCF</h1></div>
-                        <img src="/albums/isu-mbb-ucf/IMG_0386.jpg" alt="Iowa State Men&#39;s Basketball vs UCF">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/isu-mbb-uno/">
-                        <div class="title-overlay"><h1>Iowa State Men&#39;s Basketball vs. UNO</h1></div>
-                        <img src="/albums/isu-mbb-uno/ISD09381.jpg" alt="Iowa State Men&#39;s Basketball vs. UNO">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/erik-pitts/">
-                        <div class="title-overlay"><h1>Erik the Barnstormer</h1></div>
-                        <img src="/albums/erik-pitts/IMG_4220-2.jpg" alt="Erik the Barnstormer">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/jennings-2024/">
-                        <div class="title-overlay"><h1>The Jennings</h1></div>
-                        <img src="/albums/jennings-2024/IMG_9126.jpg" alt="The Jennings">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/isu-cfb-cincy/">
-                        <div class="title-overlay"><h1>Iowa State Fooball vs Cincinnati</h1></div>
-                        <img src="/albums/isu-cfb-cincy/ISD08067.jpg" alt="Iowa State Fooball vs Cincinnati">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/isu-mbb-kc/">
-                        <div class="title-overlay"><h1>Iowa State Men&#39;s Basketball vs Kansas City</h1></div>
-                        <img src="/albums/isu-mbb-kc/ISD04588.jpg" alt="Iowa State Men&#39;s Basketball vs Kansas City">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/zombie-bar-2024/">
-                        <div class="title-overlay"><h1>Welch Ave Zombie Bar Crawl 2024</h1></div>
-                        <img src="/albums/zombie-bar-2024/IMG_4039.jpg" alt="Welch Ave Zombie Bar Crawl 2024">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/worlds-of-fun-haunt/">
-                        <div class="title-overlay"><h1>Halloween Haunt 2024</h1></div>
-                        <img src="/albums/worlds-of-fun-haunt/IMG_3281.jpg" alt="Halloween Haunt 2024">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/disney-2024/">
-                        <div class="title-overlay"><h1>Dinsey World and Mickey&#39;s Not So Scary Halloween Party</h1></div>
-                        <img src="/albums/disney-2024/IMG_3850.jpg" alt="Dinsey World and Mickey&#39;s Not So Scary Halloween Party">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/cylaunch/">
-                        <div class="title-overlay"><h1>CyLaunch 2024-2025</h1></div>
-                        <img src="/albums/CyLaunch/IMG_3068.jpg" alt="CyLaunch 2024-2025">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/film/">
-                        <div class="title-overlay"><h1>Film Photos</h1></div>
-                        <img src="/albums/film/IMG_0370.jpg" alt="Film Photos">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/headshots2/">
-                        <div class="title-overlay"><h1>Headshots</h1></div>
-                        <img src="/albums/headshots/IMG_4371.jpg" alt="Headshots">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/story-book/">
-                        <div class="title-overlay"><h1>Story Book Orchard</h1></div>
-                        <img src="/albums/story-book/IMG_2301.jpg" alt="Story Book Orchard">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/big-boy/">
-                        <div class="title-overlay"><h1>Big Boy #4014</h1></div>
-                        <img src="/albums/big-boy/IMG_1425-Enhanced-NR.jpg" alt="Big Boy #4014">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/lake-powell-2024/">
-                        <div class="title-overlay"><h1>Lake Powell 2024</h1></div>
-                        <img src="/albums/lake-powell-2024/IMG_0614.jpg" alt="Lake Powell 2024">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/colorado/">
-                        <div class="title-overlay"><h1>Rocky Mountain National Park</h1></div>
-                        <img src="/albums/colorado/IMG_8829.jpg" alt="Rocky Mountain National Park">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/luke-grad/">
-                        <div class="title-overlay"><h1>Graduation</h1></div>
-                        <img src="/albums/luke-grad/IMG_6796.jpg" alt="Graduation">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/spring-break/">
-                        <div class="title-overlay"><h1>Spring Break, 2024</h1></div>
-                        <img src="/albums/spring-break/IMG_0201.jpg" alt="Spring Break, 2024">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/grant-naliya/">
-                        <div class="title-overlay"><h1>Winter Proposal</h1></div>
-                        <img src="/albums/grant-naliya/IMG_5129.jpg" alt="Winter Proposal">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/lake-powell-2023/">
-                        <div class="title-overlay"><h1>Lake-powell-2023</h1></div>
-                        <img src="/albums/lake-powell-2023/IMG_3378.jpg" alt="Lake-powell-2023">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/worlds-of-fun/">
-                        <div class="title-overlay"><h1>Worlds of Fun</h1></div>
-                        <img src="/albums/worlds-of-fun/IMG_2316.jpg" alt="Worlds of Fun">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/adventureland-construction/">
-                        <div class="title-overlay"><h1>Adventureland Construction Tour</h1></div>
-                        <img src="/albums/adventureland-construction/IMG_0877.JPG" alt="Adventureland Construction Tour">
-                    </a>
-                
-            
-                
-                    <a href="https://shotsbyjesus.com/galleries/snow-day/">
-                        <div class="title-overlay"><h1>Snow Day</h1></div>
-                        <img src="/albums/snow-day/IMG_8222.jpg" alt="Snow Day">
-                    </a>
-                
-            
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Andrew Jesus.  All rights reserved.</p>
-    </footer>
-    <script>
-    
-        window.addEventListener('scroll', function() {
-            var navbar = document.getElementById('nav-list');
-            
-            
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
+  <section class="hero" style="background-image:url('img/Hero.png');">
+    <section class="web-header">
+    <link rel="stylesheet" href="/css/nav.css">
+<nav class="nav-bar">
+    <ul class="nav-links">
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li><a class="nav-link" href="/#gala">Galleries</a></li>
         
-        window.addEventListener('resize', function() {
-            var x = document.getElementById("navlinks");
-            var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+        
+    </ul>
+</nav>
+</section>
 
-            
-            if (screenWidth >= 768) {
-                x.style.display = "flex";
-            } else {
-                
-                x.style.display = "none";
-            }
-        });
-        </script>
+    <div class="hero-overlay">
+        <h1 class="title">Shots by Jesus</h1>
+        <p class="tagline">Capture Moments, Tell Stories</p>
+    </div>
+
+</section>
+
+
+    
+<div class="call-to-action">
+  <a class=booking href="/contact/"><h2>Book Now!</h2></a>
+</div>
+<div id="albums" class="albums-wrapper">
+  <h1 class="section-heading">Portfolio</h1>
+  
+  <div class="band">
+    
+  </div>
+  <div class="album-grid">
+    
+      
+      
+      <a class="album-card" href="/gallery/isu-daily/">
+        <div class="card-overlay">
+          <h3>Iowa State Daily</h3>
+        </div>
+       <img src="/gallery/isu-daily/ISD04664_hu5482517334010489424.jpg" alt="Iowa State Daily">
+
+      </a>
+      
+      
+      
+      <a class="album-card" href="/gallery/portraits/">
+        <div class="card-overlay">
+          <h3>Portraits</h3>
+        </div>
+       <img src="/gallery/portraits/8P9A9307_hu17856495502270406089.jpg" alt="Portraits">
+
+      </a>
+      
+      
+      
+      <a class="album-card" href="/gallery/landscapes-travel/">
+        <div class="card-overlay">
+          <h3>Travel and Landscapes</h3>
+        </div>
+       <img src="/gallery/landscapes-travel/IMG_3236_hu6602636812579005877.jpg" alt="Travel and Landscapes">
+
+      </a>
+      
+  </div>
+</div>
+
+
+
 </body>
+<link rel="stylesheet" href="/css/footer.css">
+<footer class="page-footer">
+    <p>&copy;Andrew Jesus/Shots by Jesus.</p>
+</footer>
 </html>

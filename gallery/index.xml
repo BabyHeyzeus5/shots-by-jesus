@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Galleries on Shots by Jesus</title>
+    <link>http://localhost:1313/gallery/</link>
+    <description>Recent content in Galleries on Shots by Jesus</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iowa State Daily</title>
+      <link>http://localhost:1313/gallery/isu-daily/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/isu-daily/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portraits</title>
+      <link>http://localhost:1313/gallery/portraits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/portraits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel and Landscapes</title>
+      <link>http://localhost:1313/gallery/landscapes-travel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/landscapes-travel/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

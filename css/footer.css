@@ -1,0 +1,13 @@
+.page-footer {
+    height: 6vh;
+    line-height: 6vh;
+    background-color: black;
+    color: #fff;
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.page-footer p {
+    margin: 0;
+}

@@ -1,0 +1,24 @@
+.nav-bar {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    line-height: 3vh;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    margin-top: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-top: 0;
+    padding: 10px;
+}
