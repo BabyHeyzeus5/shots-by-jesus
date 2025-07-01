@@ -1,13 +1,16 @@
 .page-footer {
-    height: 6vh;
-    line-height: 6vh;
-    background-color: black;
-    color: #fff;
-    padding-left: 5rem;
-    font-size: 1.5rem;
-    margin: 0;
+  background-color: black;
+  color: #fff;
+  padding: 1rem 2rem;        /* vertical and horizontal padding */
+  font-size: clamp(1rem, 1.5vw, 1.5rem); /* scalable font size */
+  display: flex;
+  align-items: center;
+  min-height: 6vh;           /* ensures minimum height relative to viewport */
+  margin: 0;
 }
 
 .page-footer p {
-    margin: 0;
+  margin: 0;
+  /* Optional: make sure text wraps nicely on narrow screens */
+  flex: 1 1 auto;
 }

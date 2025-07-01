@@ -8,6 +8,7 @@
 .section-heading {
   text-align: center;
   margin: 0;
+  margin-bottom: 4%;
 }
 
 .album-grid {
@@ -22,7 +23,7 @@
 
 .album-card {
   background-color: #d4d4d4;
-  width: 30%;
+  width: 28%;
   min-width: 250px; /* prevents it from getting too small */
   max-width: 100%;
   aspect-ratio: 2/3; /* consistent height relative to width */
@@ -59,11 +60,13 @@
 
 .booking {
   text-align: center;
-  width: 200px; /* fixed but reasonable size for buttons */
+  width: 30%;
+  min-width: 200px; /* fixed but reasonable size for buttons */
+  min-height: 100px;
   padding: 0.75rem 1rem;
   background-color: #f5d545;
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 2rem;
   transition: background-color 0.3s;
   text-decoration: none;
   color:#646464
@@ -74,14 +77,14 @@
 }
 
 /* Responsive breakpoints */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .album-card {
     width: 45%;
   }
   .albums-wrapper {
     font-size: 1.8em;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .album-card {

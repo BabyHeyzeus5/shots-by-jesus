@@ -37,15 +37,30 @@
     
         <section class="hero" style="background-image:url('IMG_0614.jpg');">
     <section class="web-header">
-    <link rel="stylesheet" href="/css/nav.css">
-<nav class="nav-bar">
+    <nav class="nav-bar">
     <ul class="nav-links">
         <li><a class="nav-link" href="/">Home</a></li>
         <li><a class="nav-link" href="/#gala">Galleries</a></li>
         
-        
+        <li><a class="nav-link-bold" href="/contact/">Book Now!</a></li>
     </ul>
+
 </nav>
+    <div class="site-title">
+        <h1>Shots by Jesus</h1>
+    </div>
+  <button class="hamburger" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click' , () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </section>
 
   <div class="hero-overlay">
@@ -374,8 +389,11 @@
   function layoutMasonryRowWise() {
     const container = document.getElementById('photo-gallery');
     const items = Array.from(container.getElementsByClassName('gallery-item'));
-    const containerWidth = container.clientWidth;
-    const columns = 3;
+const containerWidth = container.clientWidth;
+    let columns = 3;
+    if (containerWidth < 600) columns = 1;
+    else if (containerWidth < 900) columns = 2;
+    else columns = 3;
     const gap = 10;
     const imageWidth = ((containerWidth - (columns - 1) * gap) )/ columns;
     const rowHeights = new Array(columns).fill(0);
@@ -432,8 +450,7 @@
 
 
 </body>
-<link rel="stylesheet" href="/css/footer.css">
 <footer class="page-footer">
-    <p>&copy;Andrew Jesus/Shots by Jesus.</p>
+    <p>&copy;Andrew Jesus/Shots by Jesus, all rights reserved.</p>
 </footer>
 </html>

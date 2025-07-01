@@ -1,9 +1,13 @@
+/* .web-header {
+}
+
 .nav-bar {
     height: 100%;
-    width: 100%;
+    width: 25%;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: inline-block;
 }
 
 .nav-link {
@@ -11,6 +15,19 @@
     color: #fff;
     line-height: 3vh;
     font-size: 1.2rem;
+}
+
+.nav-link-bold {
+    text-decoration: none;
+    color: #000;
+    line-height: 3vh;
+    font-size: 1.2rem;
+    background-color: #f5d545;
+    width: 200px;
+    height: 50%;
+    padding: 0;
+    border: 10px solid #f5d545;
+    border-radius: 15px;
 }
 
 .nav-links {
@@ -21,4 +38,135 @@
     display: inline-block;
     margin-top: 0;
     padding: 10px;
+}
+
+.site-title {
+    color: white;
+    text-align: center;
+    width: 40%;
+    margin-left: 5%;
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 3vh;
+    padding: 0;
+    margin-top: 0;
+}
+
+.site-title h1 {
+    margin-top: 0;
+} */
+
+.web-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #000000; /* optional */
+  position: relative;
+}
+
+/* Nav bar stays left */
+.nav-bar {
+  flex: 0 0 auto;
+}
+
+/* Nav links layout */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Standard nav links */
+.nav-link,
+.nav-link-bold {
+  text-decoration: none;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+/* Regular nav styling */
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Bold nav styling */
+.nav-link-bold {
+  color: #000;
+  background-color: #f5d545;
+  border: 2px solid #f5d545;
+  border-radius: 15px;
+}
+
+.nav-link-bold:hover {
+  background-color: #e6c432;
+}
+
+/* Centered title - absolutely positioned in the middle */
+.site-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  white-space: nowrap;
+}
+
+/* Hide hamburger on large screens */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Nav links visible by default on large screens */
+.nav-links {
+  display: flex;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    padding: 1rem 0;
+    width: 25%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-link, .nav-link-bold {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: #000;
+  }
 }

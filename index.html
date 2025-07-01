@@ -38,15 +38,30 @@
     
   <section class="hero" style="background-image:url('img/Hero.png');">
     <section class="web-header">
-    <link rel="stylesheet" href="/css/nav.css">
-<nav class="nav-bar">
+    <nav class="nav-bar">
     <ul class="nav-links">
         <li><a class="nav-link" href="/">Home</a></li>
         <li><a class="nav-link" href="/#gala">Galleries</a></li>
         
-        
+        <li><a class="nav-link-bold" href="/contact/">Book Now!</a></li>
     </ul>
+
 </nav>
+    <div class="site-title">
+        <h1>Shots by Jesus</h1>
+    </div>
+  <button class="hamburger" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click' , () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </section>
 
     <div class="hero-overlay">
@@ -105,8 +120,7 @@
 
 
 </body>
-<link rel="stylesheet" href="/css/footer.css">
 <footer class="page-footer">
-    <p>&copy;Andrew Jesus/Shots by Jesus.</p>
+    <p>&copy;Andrew Jesus/Shots by Jesus, all rights reserved.</p>
 </footer>
 </html>

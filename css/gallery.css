@@ -1,10 +1,4 @@
-.web-header {
-    padding: 0;
-    margin: 0;
-    height: 5vh;
-    background-color: rgb(0, 0, 0);
-    position: fixed;
-}
+
 
 .hero-subtext {
     font-size: 2em;
@@ -12,42 +6,36 @@
 }
 
 .hero {
-    height: 100vh;
-    background-size: 100vw, auto ;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 0;
-    margin-bottom: 0;
+  height: 100vh;               /* fixed height */
+  width: 100%;
+  background-size: cover;      /* fills height, crops width as needed */
+  background-position: center center; /* center image so crop is balanced */
+  background-repeat: no-repeat;
+  position: relative;
 }
-
 .hero-overlay h1 {
     margin-top: 0;
 }
 
 .hero-overlay {
     text-align: right;
-    position: relative;
+    position: absolute;
     top: 80%;
+    right:25%;
     color: #fff;
     margin-right: 5vw;
     font-size: 4em;
 }
 
+
 .gallery-grid {
     position: relative;
     margin: 0 10%;
 
-    /* display: grid;
-    grid-template-rows: masonry;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    grid-auto-flow: dense; */
 }
 
 .gallery-grid a {
-    /* display: inline-block;
-    width: 100%;
-    margin-bottom: 2rem; */
+
     width: 30vw;
     position: absolute;
     display: block;
@@ -58,5 +46,15 @@
     width: 100%;
     height: auto;
    transition: all 1s ease;
+
+}
+
+@media (max-width: 1024px) {
+.gallery-grid a {
+
+    width: 45vw;
+    position: absolute;
+    display: block;
+}
 
 }
