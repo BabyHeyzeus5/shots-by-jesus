@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Galleries on Shots by Jesus</title>
-    <link>http://localhost:1313/gallery/</link>
+    <link>https://shotsbyjesus.com/gallery/</link>
     <description>Recent content in Galleries on Shots by Jesus</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shotsbyjesus.com/gallery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Iowa State Daily</title>
-      <link>http://localhost:1313/gallery/isu-daily/</link>
+      <link>https://shotsbyjesus.com/gallery/isu-daily/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/isu-daily/</guid>
+      <guid>https://shotsbyjesus.com/gallery/isu-daily/</guid>
       <description></description>
     </item>
     <item>
       <title>Portraits</title>
-      <link>http://localhost:1313/gallery/portraits/</link>
+      <link>https://shotsbyjesus.com/gallery/portraits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/portraits/</guid>
+      <guid>https://shotsbyjesus.com/gallery/portraits/</guid>
       <description></description>
     </item>
     <item>
       <title>Travel and Landscapes</title>
-      <link>http://localhost:1313/gallery/landscapes-travel/</link>
+      <link>https://shotsbyjesus.com/gallery/landscapes-travel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/landscapes-travel/</guid>
+      <guid>https://shotsbyjesus.com/gallery/landscapes-travel/</guid>
       <description></description>
     </item>
   </channel>
