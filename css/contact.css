@@ -42,7 +42,6 @@ input[type=date] {
 
 
 
-
 input[type=text]:focus {
   border-color: #f5d545;
   box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
@@ -83,3 +82,4 @@ button[type=submit]:hover {
 .title {
     color: rgba(0,0,0,0)
 }
+
