@@ -63,6 +63,10 @@
   padding: 1rem;
   background-color: #000000; /* optional */
   position: relative;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
 }
 
 /* Nav bar stays left */
