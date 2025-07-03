@@ -66,7 +66,6 @@
   width: 100%;
   padding-right: 0;
   padding-left: 0;
-  overflow: hidden;
 }
 
 /* Nav bar stays left */
@@ -108,6 +107,7 @@
   background-color: #f5d545;
   border: 2px solid #f5d545;
   border-radius: 15px;
+  width: 100%;
 }
 
 .nav-link-bold:hover {
@@ -159,7 +159,9 @@
     right: 0;
     background-color: #000000;
     padding: 1rem 0;
-    width: 25%;
+    width: 30%;
+    min-width: 75px;;
+    z-index: 100;
   }
 
   .nav-links.show {
@@ -173,4 +175,10 @@
     border: none;
     background-color: #000;
   }
+
+  .nav-link-bold {
+    background-color: #e6c432;
+    color:black
+  }
+
 }

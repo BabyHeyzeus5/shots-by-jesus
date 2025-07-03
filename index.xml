@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shots by Jesus</title>
-    <link>https://shotsbyjesus.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Shots by Jesus</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://shotsbyjesus.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://shotsbyjesus.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://shotsbyjesus.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;I am Andrew Jesus, a passionate photographer and aspiring programmer. This website showcases my work and the journey I am on in both photography and technology.&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-journey&#34;&gt;My Journey&lt;/h3&gt;&#xA;&lt;p&gt;Photography has always been a part of my life. I picked up my first camera during my early teens, and ever since, I have been captivated by the art of capturing moments.&lt;/p&gt;&#xA;&lt;p&gt;Programming has allowed me to bring my creative ideas to life through technology. I enjoy building applications that can enhance the user experience and share my passion for photography.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://shotsbyjesus.com/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shotsbyjesus.com/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Iowa State Daily</title>
-      <link>https://shotsbyjesus.com/gallery/isu-daily/</link>
+      <link>http://localhost:1313/gallery/isu-daily/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shotsbyjesus.com/gallery/isu-daily/</guid>
+      <guid>http://localhost:1313/gallery/isu-daily/</guid>
       <description></description>
     </item>
     <item>
       <title>Portraits</title>
-      <link>https://shotsbyjesus.com/gallery/portraits/</link>
+      <link>http://localhost:1313/gallery/portraits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shotsbyjesus.com/gallery/portraits/</guid>
+      <guid>http://localhost:1313/gallery/portraits/</guid>
       <description></description>
     </item>
     <item>
       <title>Travel and Landscapes</title>
-      <link>https://shotsbyjesus.com/gallery/landscapes-travel/</link>
+      <link>http://localhost:1313/gallery/landscapes-travel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shotsbyjesus.com/gallery/landscapes-travel/</guid>
+      <guid>http://localhost:1313/gallery/landscapes-travel/</guid>
       <description></description>
     </item>
   </channel>
